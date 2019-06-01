@@ -39,7 +39,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 800px;
   padding: 0 10px;
   width: 100%;
 }
@@ -88,9 +88,9 @@ a {
   // font-weight: bold;
   text-decoration: none;
 	cursor: pointer;
-  &:hover, &:active {
-    color: darken($ruby, 10%);
-  }
+  // &:hover, &:active {
+    // color: darken($white, 20%);
+  // }
 }
 
 ul, ol {
@@ -275,6 +275,11 @@ nav {
   @include mobile {
     padding: 1px 20px 20px 20px;
   }
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
 }
 
 .posts > .post:last-child {
@@ -303,6 +308,7 @@ nav {
 }
 
 .wrapper-footer {
+  position: fixed;
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -310,8 +316,14 @@ nav {
 }
 
 footer {
+  // margin-top: 40px;
+  // position: static;
   padding: 10px 5px 10px 5px;
   text-align: center;
+}
+
+#main {
+  margin-bottom: 85px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
