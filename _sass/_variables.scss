@@ -13,11 +13,20 @@ $darkGray: #333;
 $gray: #666;
 $lightGray: #eee;
 $white: #fff;
+$notQuiteWhite: #fafafa;
+
+$darkPurple: #25283D;
+$purple: #8F3985;
+$lightPurple: #A675A1;
+$banana: #F1E8B8;
+$yellow: #F9E784;
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
+$titleFont: "Roboto", Arial;
+$contentFont: "Ubuntu";
 
 // Mobile breakpoints
 @mixin mobile {

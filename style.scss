@@ -19,8 +19,16 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4 $contentFont;
   color: $darkGray;
+  -webkit-font-smoothing: initial;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+  // -webkit-text-stroke: 0.45px;
+  // or
+  // -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+  // or
+  // text-shadow: #fff 0px 1px 1px;
 }
 
 .wrapper-footer {
@@ -37,7 +45,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $titleFont;
+  // letter-spacing: 1px;
   color: $darkerGray;
   font-weight: bold;
 
@@ -79,7 +88,7 @@ a {
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: darken($white, 20%);
   }
 }
 
@@ -158,11 +167,12 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  background: $darkPurple;
 }
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  // border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
@@ -198,7 +208,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $white;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -208,7 +218,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $notQuiteWhite;
   font-size: 16px;
 
   @include mobile {
@@ -231,14 +241,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $white;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $white;
     }
   }
 }
@@ -285,7 +295,7 @@ nav {
 }
 
 footer {
-  padding: 20px 0;
+  padding: 10px 5px 10px 5px;
   text-align: center;
 }
 
