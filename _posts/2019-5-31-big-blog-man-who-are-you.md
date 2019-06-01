@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Big-blog-man Background
+comments: true
 ---
 
 Who am I? Well.. most is in the [about](/about) section, but this post will outline why I am throwing up everything into a blog.
