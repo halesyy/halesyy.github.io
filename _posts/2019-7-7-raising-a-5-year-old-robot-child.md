@@ -4,20 +4,20 @@ title: Raising a 5-year-old robot child
 comments: true
 ---
 
-This is a document-based piece narrating over the struggles I've endured trying to raise
+This is a document-based piece narrating over the struggles and pleasures I've endured trying to raise
 my beautiful baby robot, depicted by my classmates as **"Ultron"**. So far I've spent an estimated
 **250 hours** putting together the large codebase to gain some minor independence on it's own,
 but I am getting rather close to a totally independent robot-artist (kinda, there are some struggles I'll outline in future articles).
 
 Firstly, I'll preface this by saying that no-one does this kind of weird-wacky stuff cause it's something that simply doesn't return on the time invested. I'd never imagine myself creating something along the lines of this unless I had an intense focus due to my class-structure... A great class high-school art-studies structure.
 
-I attend **Kempsey Adventist School (KAS)** - a small private school in Kempsey, my home town in Australia. Growing up in a small country-town has taught me a lot so far, and I look forward to living in a big city post-school graduation, to really *feel* the contrast between them. But anyway...
+I attend **Kempsey Adventist School (KAS)** - a small private school in Kempsey, my home town in Australia. Growing up in a small country-town has taught me a lot about minimalism and relationships, where I look forward to living in a big city post-school graduation, to really *feel* the contrast.
 
-Choosing Art for **Australian high-school** graduating students requires the choice of a *major project* which you intend on spending a huge chunk of time building. It has to have conceptual and structural meaning, with obvious portrayals of refinement and dedication, with an intimate knowledge of the world.
+The subject of Art in Aussie high-school involves sinking much time into a major project. This is intended to portray a range of evolving concepts as the date gets closer to the presentation of this project to the markets. All that's required: a concept.
 
-At first, I had no idea what I was going to produce.. I barely had any physical artistic skills, I just enjoyed learning the historic component and applying these hectic-historic styles to canvas' and finding out how they portrayed emotions, but when it came to actually come up with something deep and meaningful to present alongside my ultra-talented classmates, I had just about nothing I could think of physically.
+I had no idea what I was going to produce. I'll gladly admit I have no physical artistic schools, all I enjoyed was learning the historical practices and how to apply their algorithm-like concepts into formulating human ideas. But when it came to actually come up with something deep and meaningful to present alongside my talented classmates, I had just about nothing I could think of physically.
 
-### So, I thought digitally
+### So, as any desperate programmer would, I thought digitally
 
 I brainstormed the idea for a few moments, what if I could *code* something? Programming was my thing, ever since I got my first computer in 4th-grade, pulling apart those weird closely-human-like languages that made-up the games that I downloaded from the edges of the internet that I'd navigate myself to. I quickly got addicted to these areas of tech.
 
