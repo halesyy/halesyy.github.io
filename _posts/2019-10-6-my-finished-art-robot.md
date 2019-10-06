@@ -6,7 +6,9 @@ comments: true
 
 ## I created a robot which learns the same way that humans do (from influence) and documented the process of it creating a new piece of art.
 
-Due date: 2nd of September, 2019. The acclimation of 8 months of work, an estimated 250 hours of complex coding, contemplation, mathematical modelling, construction, and management, produced something higher-valued than myself in the area designated “contemporary art”.
+Instead of appending to an already-crawled and SEO-optimized article, I’d make another to gain some more domain space for myself.
+
+The due date: 2nd of September, 2019. The acclimation of 8 months of work, an estimated 250 hours of complex coding, contemplation, mathematical modelling, construction, and management, produced something higher-valued than myself in the area designated “contemporary art”.
 
 ![Process displaying the art robot's ability to learn over time, with the last panel involving code](/images/art-robot-physical.jpg "Process displaying the art robot's ability to learn over time, with the last panel involving code")
 
