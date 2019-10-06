@@ -55,6 +55,12 @@ One could say that if this robot was trained on every face in the world to-date,
 
 Anyway...
 
-Before, I did say **completely unique**, though that is not entirely true (BREAKING NEWS: SCANDAL). (talk about how it's possible there's a copy)
+Before, I did say **completely unique**, though that is not entirely true (BREAKING NEWS: SCANDAL). In game-generation, there's an idea that if you want to make a world be generated completely randomly from a random seed, it's possible for two worlds to possess the exact same qualities with enough iterations of generating a random world. The same goes in password hashing (it's possible for two (and more) passwords to log into the same account). The same goes in theoretical universal expansion: that there exists a copy of one's self and surroundings, and possibly a copy of earth, if given an infinite or long-enough range of time to allow creation to continue.
 
-One concept artist's don't pay much attention to is artwork size dependent on variability.
+The same goes for this robot art-child, there are a very... very large amount of artworks that can be generated from a couple of examples - even one example. But with enough "spins" of the "self-portrait-roulette", another identical may be created. This speaks to our individuality, since the appearance of us is so gosh-darn rare, that once you then apply the individuality and psychological differences - personal congruency (exact equality) I'd say is impossible.
+
+Lastly, one concept artist's don't pay much attention to is the artwork size dependent on variability - a larger artwork has more atoms that can be used to a uniqueness added unto it. This doesn't really apply, but in my robot - larger samples means more work which equates to more randomness.
+
+## Wow
+
+I hope that was interesting or beneficial to you, and if you are planning to do something programmatic for a school-project or (in my case) HSC major work - I'd love to either chat with you, but also encourage you greatly to do it. This project really opened my eyes to the human creative process, generating structures, and in-general made my programming much stronger.
