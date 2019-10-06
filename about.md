@@ -6,8 +6,8 @@ permalink: /about/
 
 ### Jack
 
-Nothing much to say.
+Have not filled out this section yet.
 
 ### Contact me
 
-[halesyy@gmail.com](mailto:me@halesyy@gmail.com)
+[me@jackhales.com](mailto:me@jackhales.com)

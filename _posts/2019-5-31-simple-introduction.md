@@ -1,10 +1,8 @@
 ---
 layout: post
-title: Big-blog-man Background
+title: Simple Introduction
 comments: true
 ---
-
-Who am I? Well.. most is in the [about](/about) section, but this post will outline why I am throwing up everything into a blog.
 
 As an 18-year-old Australian progressing developer going through high-school, I’m looking to expand my career opportunities as well as document some of the neat programming things that I manage to get upto.
 

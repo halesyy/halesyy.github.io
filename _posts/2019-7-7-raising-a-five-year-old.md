@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Raising a 5-year-old robot child
+title: Raising a 5-year-old Artist (old)
 comments: true
 ---
 
