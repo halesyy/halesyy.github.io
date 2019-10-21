@@ -8,7 +8,7 @@ html, body
 
 .grid-container
   display: grid
-  grid-template-columns: 40px 1fr 40px
+  grid-template-columns: 15px 1fr 15px
   grid-template-rows: 1fr
   grid-template-areas: "left main right"
 
@@ -27,7 +27,7 @@ html, body
 .left-describer
   position: absolute
   top: 0
-  left: -120px
+  left: -150px
   transition: left 0.3s
   padding: 20px 20px 20px 20px
   z-index: 3
@@ -38,7 +38,7 @@ html, body
 .right-describer
   position: absolute
   top: 0
-  right: -120px
+  right: -150px
   transition: right 0.3s
   padding: 20px 20px 20px 20px
   z-index: 3
@@ -55,7 +55,7 @@ html, body
   &:hover
     background: darken($sides, 5%)
     transition: 0.3s
-    transform: scaleX(1.2)
+    transform: scaleX(3)
 
 .right
   grid-area: right

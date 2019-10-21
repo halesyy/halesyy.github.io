@@ -56,8 +56,10 @@ function pushClass(className, direction=false) {
     if (direction === "right") var antidirection = "left";
 
     $('.main').effect('slide', { direction: antidirection, mode: 'hide', duration: 300 });
-    $('.main').html( $(className).html() );
     $('.main').effect('slide', { direction: direction, mode: 'show', duration: 300 });
+    setTimeout(function(){
+      $('.main').html( $(className).html() );
+    }, 1000);
   }
   setTimeout(placeCorrectDescribers, 300);
   $('.main').html('');
@@ -74,20 +76,34 @@ $(document).ready(() => {
     $(document).on('click', '.right', moveRight);
     $(document).on('click', '.left', moveLeft);
 
+    // var hammertime = new Hammer($('html')[0]);
+    // $('html').on('swiperight', (event) => {
+    //   alert("swiped right");
+    // });
+    $('body').swipe({
+      swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+        console.log(`moved in ${direction}`);
+        if (direction == "left") moveRight();
+        else if (direction == "right") moveLeft();
+      },
+      threshold: 0
+    });
+
+
     $('.left').hover(
       (event) => { // in
-        $('.left-describer').css({"left":"40px"});
+        $('.left-describer').css({"left":"20px"});
       },
       (event) => { // out
-        $('.left-describer').css({"left":"-120px"});
+        $('.left-describer').css({"left":"-150px"});
       }
     )
     $('.right').hover(
       (event) => { // in
-        $('.right-describer').css({"right":"40px"});
+        $('.right-describer').css({"right":"20px"});
       },
       (event) => { // out
-        $('.right-describer').css({"right":"-120px"});
+        $('.right-describer').css({"right":"-150px"});
       }
     )
 
