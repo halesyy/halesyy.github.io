@@ -59,11 +59,13 @@ function pushClass(className, direction=false) {
     $('.main').effect('slide', { direction: direction, mode: 'show', duration: 300 });
     setTimeout(function(){
       $('.main').html( $(className).html() );
-    }, 1000);
+    }, 300);
+  }
+  else {
+    $('.main').html('');
+    $('.main').html( $(className).html() );
   }
   setTimeout(placeCorrectDescribers, 300);
-  $('.main').html('');
-  $('.main').html( $(className).html() );
 }
 
 $(document).ready(() => {
