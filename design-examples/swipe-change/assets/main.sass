@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|PT+Sans+Narrow|Quicksand|Roboto|Ubuntu&display=swap')
+$sides: #2196f3
+
+html, body
+  padding: 0
+  margin: 0
+  overflow-x: hidden
+
+.grid-container
+  display: grid
+  grid-template-columns: 40px 1fr 40px
+  grid-template-rows: 1fr
+  grid-template-areas: "left main right"
+
+.left, .right, .main
+  height: 100vh
+
+.left
+  grid-area: left
+
+.left-describer, .right-describer
+  font-family: 'Quicksand', Arial
+  color: white
+  font-size: 22px
+  letter-spacing: 3px
+
+.left-describer
+  position: absolute
+  top: 0
+  left: -120px
+  transition: left 0.3s
+  padding: 20px 20px 20px 20px
+  z-index: 3
+  background: darken($sides, 5%)
+  pointer-events: none
+  border-bottom-right-radius: 6px
+
+.right-describer
+  position: absolute
+  top: 0
+  right: -120px
+  transition: right 0.3s
+  padding: 20px 20px 20px 20px
+  z-index: 3
+  background: darken($sides, 5%)
+  pointer-events: none
+  border-bottom-left-radius: 6px
+
+.left, .right
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+  z-index: 2
+  background: $sides
+  cursor: pointer
+  transition: 0.3s
+  &:hover
+    background: darken($sides, 5%)
+    transition: 0.3s
+    transform: scaleX(1.2)
+
+.right
+  grid-area: right
+
+.main, body
+  background: #E2E2E2
+
+.main
+  grid-area: main
+  color: black
+
+.content-avail
+  display: none
