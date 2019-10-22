@@ -1,4 +1,23 @@
-@media only screen and (max-width : 720px)
+@media only screen and (max-width : 1200px)
+  // .nav
+  //   text-align: left
 
-  .grid-container
-    grid-template-areas: "main main main"
+@media only screen and (max-width : 1000px)
+  .nav
+    ul > a
+      font-size: 15px
+
+@media only screen and (max-width : 850px)
+  // slide open drawer in nav
+  .nav > ul
+    display: none !important
+
+  .nav
+    .slide-drawer
+      display: block !important
+
+  .nav-small
+    display: block !important
+
+  // .page-wrapper-cancel
+  //   display: block !important

@@ -4,75 +4,104 @@ $sides: #292929
 html, body
   padding: 0
   margin: 0
-  overflow-x: hidden !important
-  touch-action: none
+  overflow-x: hidden
+  width: 100%
 
-body
-  position: relative
 
+$navHeight: 100px
+
+.shadow
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
 
 .grid-container
+  background-image: url('https://4cu929437mnd9cf792dyn5c1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/DarrenJames_TennysonResidence_Brisbane_Interior_Styling_19-1170x780.jpg')
+  background-size: cover
+  background-position: center
+  height: 70vh
   display: grid
-  grid-template-columns: 15px 1fr 15px
-  grid-template-rows: 1fr
-  grid-template-areas: "left main right"
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  grid-template-rows: $navHeight 1fr 1fr
+  grid-template-areas: "logo nav nav nav" "big-brand big-brand big-brand big-brand" "small-brand small-brand small-brand small-brand"
+  @extend .shadow
 
-.left, .right, .main
-  height: 100vh
+$imageHeight: $navHeight - 40px
 
-.left
-  grid-area: left
+.flan-logo-img
+  height: $imageHeight
 
-.left-describer, .right-describer
-  font-family: 'Quicksand', Arial
-  color: white
-  font-size: 22px
-  letter-spacing: 3px
+.logo
+  grid-area: logo
 
-.left-describer
-  position: absolute
-  top: 0
-  left: -150px
-  transition: left 0.3s
-  padding: 20px 20px 20px 20px
-  z-index: 3
-  background: darken($sides, 5%)
-  pointer-events: none
-  border-bottom-right-radius: 6px
+.logo
+  padding: 20px
+  text-align: center
 
-.right-describer
-  position: absolute
-  top: 0
-  right: -150px
-  transition: right 0.3s
-  padding: 20px 20px 20px 20px
-  z-index: 3
-  background: darken($sides, 5%)
-  pointer-events: none
-  border-bottom-left-radius: 6px
+.l-wrapper
+  text-align: center
+  padding: 18.5px
+  background: #1f1f1f
 
-.left, .right
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
-  z-index: 2
-  background: $sides
-  cursor: pointer
-  transition: 0.3s
-  &:hover
-    background: darken($sides, 5%)
-    transition: 0.3s
-    transform: scaleX(3)
+$smallNavSize: 280px
+$smallNavTuck: $smallNavSize * -1
 
-.right
-  grid-area: right
-
-.main, body
-  background: #E2E2E2
-
-.main
-  grid-area: main
-  color: black
-
-.content-avail
+.nav-small
   display: none
+  position: absolute
+  right: $smallNavTuck
+  top: 0
+  width: $smallNavSize
+  background: #fff6ed
+  color: black
+  transition: right 0.3s
+  height: 100vh
+  z-index: 10
+
+.page-wrapper-cancel
+  display: none
+  position: absolute
+  left: 0
+  z-index: 9
+  top: 0
+  width: 100%
+  height: 100vh
+  background: rgba(0, 0, 0, 0.4)
+
+.nav
+  line-height: $navHeight
+  color: white
+
+  // drawer that opens up
+  .slide-drawer
+    display: none
+    float: right
+    margin-right: 20px
+    cursor: pointer
+
+  ul
+    margin: 0
+    list-style: none
+    a
+      color: white
+      font-size: 20px
+      li
+        float: left
+        margin: 0 10px 0 10px
+
+.logo, .nav
+  font-family: 'Quicksand', sans-serif
+  background: rgba(0, 0, 0, 0.75)
+
+
+.nav
+  grid-area: nav
+
+.big-brand
+  grid-area: big-brand
+  // position: relative
+  bottom: 0
+
+.small-brand
+  grid-area: small-brand
+
 
 @import "sass-includes/breakpoints"

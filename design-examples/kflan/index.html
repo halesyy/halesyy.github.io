@@ -5,33 +5,64 @@
     <title>Design Example - Jack Hales</title>
     <link style="text/css" rel="stylesheet" href="./assets/main.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-sacle=1, maximum-scale=1, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="grid-container page-holder">
-      <div class="left"></div>
-      <div class="left-describer">
-        Test
+    <div class="page-wrapper-cancel"></div>
+    <div class="nav-small">
+      <div class="l-wrapper">
+        <img class="flan-logo-img" src="https://www.kellyflanaganrealestate.com.au/wp-content/uploads/2016/08/Kelly_Flanagan_Main_Logo_on_Black_Transparent.png" alt="Kelly Flanagan Logo" />
       </div>
-      <div class="right-describer">
-        Test
-      </div>
-      <div class="main"></div>
-      <div class="right"></div>
+
     </div>
-    <div class="content-avail" style="display: none">
-      <div class="page contact-page">
-        <h1>This is the contact page!</h1>
+    <div class="grid-container">
+      <div class="logo">
+        <img class="flan-logo-img" src="https://www.kellyflanaganrealestate.com.au/wp-content/uploads/2016/08/Kelly_Flanagan_Main_Logo_on_Black_Transparent.png" alt="Kelly Flanagan Logo" />
       </div>
-      <div class="page main-page">
-        <h1>This is the main page content!</h1>
-        <input type="text" />
+      <div class="nav">
+        <ul>
+          <a href="#home"><li>Home</li></a>
+          <a href="#buying"><li>Buying</li></a>
+          <a href="#selling"><li>Selling</li></a>
+          <a href="#useful-links"><li>Useful Links</li></a>
+          <a href="#about-us"><li>About Us</li></a>
+          <a href="#careers"><li>Careers</li></a>
+          <a href="#contact-us"><li>Contact Us</li></a>
+        </ul>
+        <div class="slide-drawer">OPEN</div>
       </div>
-      <div class="page about-page">
-        <h1>This is the about page!</h1>
-      </div>
+      <script>
+        // how to operate nav-small Jquery
+        var smallNavOpen = false;
+        var $sn = $('.nav-small');
+        var $cn = $('.page-wrapper-cancel');
+        $('.slide-drawer, .page-wrapper-cancel').click((event) => {
+          // depending on smallnavopen, open or close
+          if (smallNavOpen) {
+            // close
+            $sn.css({
+              "right": "-280px"
+            });
+            $cn.css({
+              "display": "none"
+            });
+          }
+          else {
+            // open
+            $sn.css({
+              "right": 0
+            });
+            $cn.css({
+              "display": "block"
+            });
+          }
+          smallNavOpen = !smallNavOpen;
+        });
+      </script>
+      <div class="big-brand">Welcome to brand land</div>
+      <div class="small-brand">You probably wont read me</div>
     </div>
   </body>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script> -->
   <script src="assets/main.js"></script>
 </html>
