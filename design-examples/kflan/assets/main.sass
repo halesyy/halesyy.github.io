@@ -1,17 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|PT+Sans+Narrow|Quicksand|Roboto|Ubuntu&display=swap')
 $sides: #292929
+$orange: #f7941f
+$mainFont: 'Quicksand'
+$secondFont: 'Ubuntu'
+$transparentOrange: rgba(247, 148, 31, 0.97)
 
 html, body
   padding: 0
   margin: 0
   overflow-x: hidden
   width: 100%
+  background: whitesmoke
+
+body
+  position: relative
 
 
 $navHeight: 100px
 
 .shadow
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+
+.clearfix
+  &::after
+    content: " "
+    visibility: hidden
+    display: block
+    height: 0
+    clear: both
 
 .grid-container
   background-image: url('https://4cu929437mnd9cf792dyn5c1-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/DarrenJames_TennysonResidence_Brisbane_Interior_Styling_19-1170x780.jpg')
@@ -38,8 +54,12 @@ $imageHeight: $navHeight - 40px
 
 .l-wrapper
   text-align: center
-  padding: 18.5px
+  height: $navHeight
   background: #1f1f1f
+
+.l-wrapper-extended
+  img
+    padding-top: 18.5px
 
 $smallNavSize: 280px
 $smallNavTuck: $smallNavSize * -1
@@ -88,7 +108,7 @@ $smallNavTuck: $smallNavSize * -1
         margin: 0 10px 0 10px
 
 .logo, .nav
-  font-family: 'Quicksand', sans-serif
+  font-family: $mainFont, sans-serif
   background: rgba(0, 0, 0, 0.75)
 
 
@@ -96,12 +116,68 @@ $smallNavTuck: $smallNavSize * -1
   grid-area: nav
 
 .big-brand
+  .content
+    position: absolute
+    bottom: 0
+    width: 100%
   grid-area: big-brand
-  // position: relative
-  bottom: 0
+  position: relative
+  width: 100%
+
+.enticing-big
+  background: $transparentOrange
+  padding: 20px
+  font-size: 25px
+  color: white !important
+  border: 0
+  margin-left: 25%
+  margin-bottom: 20px
+  width: calc(50% - 40px)
+  border-radius: 10px
+  outline: 0
+  @extend .shadow
+  &::placeholder
+    color: white
+
+input
+  font-family: $mainFont
+  text-align: center
 
 .small-brand
   grid-area: small-brand
+  .content
+    font-family: $secondFont
+    text-align: center
+    color: white
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000
 
+.image-content
+  @extend .shadow
+  @extend .clearfix
+  margin-left: 40px
+  margin-right: 40px
+  transition: 0.2s
+  .image-container, .content
+    float: left
+  .image-container
+    width: 45%
+    height: 400px
+    background-size: cover
+    background-position: center
+  .content
+    @extend .shadow
+    color: white
+    text-align: center
+    background: #191919
+    height: calc(400px - 80px)
+    width: calc(55% - 80px)
+    padding: 40px
+    font-size: 2.5rem
+    font-family: $mainFont
+    transition: 0.4s
+    &:hover
+      transform: scale(1.05)
+      border-radius: 6px
+      transition: 0.2s
 
 @import "sass-includes/breakpoints"

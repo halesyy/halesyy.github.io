@@ -10,18 +10,18 @@
   <body>
     <div class="page-wrapper-cancel"></div>
     <div class="nav-small">
-      <div class="l-wrapper">
+      <div class="l-wrapper l-wrapper-extended">
         <img class="flan-logo-img" src="https://www.kellyflanaganrealestate.com.au/wp-content/uploads/2016/08/Kelly_Flanagan_Main_Logo_on_Black_Transparent.png" alt="Kelly Flanagan Logo" />
       </div>
-
     </div>
     <div class="grid-container">
       <div class="logo">
-        <img class="flan-logo-img" src="https://www.kellyflanaganrealestate.com.au/wp-content/uploads/2016/08/Kelly_Flanagan_Main_Logo_on_Black_Transparent.png" alt="Kelly Flanagan Logo" />
+        <a href="#">
+          <img class="flan-logo-img" src="https://www.kellyflanaganrealestate.com.au/wp-content/uploads/2016/08/Kelly_Flanagan_Main_Logo_on_Black_Transparent.png" alt="Kelly Flanagan Logo" />
+        </a>
       </div>
       <div class="nav">
-        <ul>
-          <a href="#home"><li>Home</li></a>
+        <ul style="margin-left: 15%">
           <a href="#buying"><li>Buying</li></a>
           <a href="#selling"><li>Selling</li></a>
           <a href="#useful-links"><li>Useful Links</li></a>
@@ -29,7 +29,9 @@
           <a href="#careers"><li>Careers</li></a>
           <a href="#contact-us"><li>Contact Us</li></a>
         </ul>
-        <div class="slide-drawer">OPEN</div>
+        <div class="slide-drawer" title="Open Navigation">
+          <img style="height: 64px; width: 64px; margin-top: 20px;" alt="hamburger icon" src="https://icon-library.net/images/menu-icon-white-png/menu-icon-white-png-27.jpg" />
+        </div>
       </div>
       <script>
         // how to operate nav-small Jquery
@@ -59,8 +61,37 @@
           smallNavOpen = !smallNavOpen;
         });
       </script>
-      <div class="big-brand">Welcome to brand land</div>
-      <div class="small-brand">You probably wont read me</div>
+      <div class="big-brand">
+        <div class="content">
+          <input class="enticing-big" type="text" placeholder="Enticing input..." />
+        </div>
+      </div>
+      <div class="small-brand">
+        <div class="content">
+          <h1>
+            Welcome to Kelly's agency, try re-sizing the page. <br/>
+            This is just some content to fill in another function.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="content-container">
+      <div class="image-content" style="margin-top: 40px; margin-bottom: 40px;">
+        <div class="image-container"
+          style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSPZ-MoZKIfQLUtoxgZDjRvSxI5pVDT7qqa7eajS1B7a-ahQYNK')"
+        ></div>
+        <div class="content">
+          Speak through images, not just words.
+        </div>
+      </div>
+      <div class="image-content" style="margin-top: 40px; margin-bottom: 40px;">
+        <div class="content">
+          On both sides.
+        </div>
+        <div class="image-container"
+          style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSgwUu7CFxyq0ccBiqHmS6xj9oEwft23b699wZcc0xbqiYMwDBT')"
+        ></div>
+      </div>
     </div>
   </body>
   <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script> -->
