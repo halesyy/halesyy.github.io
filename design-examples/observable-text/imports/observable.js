@@ -27,6 +27,7 @@ function observableText() {
   });
   return constructedOb.join(" ");
 }
+
 setInterval(function(){
   console.clear();
   console.log(observableText());
