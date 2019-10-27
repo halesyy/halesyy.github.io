@@ -1,5 +1,6 @@
 // 1. for all .obsertext divs, iter rep
-
+// to form the spans which surround all
+// the words that we want to observe.
 $('.obsertext').each((index, elem) => {
   $elem = $(elem);
   // 1. get inner html
