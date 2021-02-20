@@ -1,0 +1,105 @@
+
+$font: "Roboto", Arial
+$mono: "Source Code Pro", Arial
+$color: #FF1654
+
+// color ideas:
+// 53B3CB
+// 42E2B8
+// E01A4F
+
+.shadow
+  box-shadow: 0 4px 5px 0 rgb(0 0 0 / 1%), 0 1px 10px 0 rgb(0 0 0 / 1%), 0 2px 4px -1px rgb(0 0 0 / 1%)
+
+.dark-shadow
+  box-shadow: 0 4px 5px 0 rgb(0 0 0 / 10%), 0 1px 10px 0 rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 10%)
+
+body
+  font-family: $font
+  background: #fafafa
+
+.header
+  padding-top: 35px
+  padding-bottom: 35px
+  .left
+    float: left
+  .right
+    float: right
+    .links
+      line-height: 1.7rem
+      font-size: 1.1rem
+      a
+        color: black
+  .name
+    font-size: 1.7rem
+    line-height: 1.7rem
+    color: $color
+    font-weight: 1000
+    font-family: $mono
+
+.under-header
+  // height: 1px
+  // background: linear-gradient(to right, $color, darken($color, 25%))
+  // width: 100px
+  margin: auto
+
+.cute-button
+  padding: 9px 17px
+  background: lighten($color, 40%)
+  border: solid $color 2px
+  border-radius: 2px
+  transition: all 0.1s
+  letter-spacing: 2px
+  color: #ac0303
+  margin-right: 10px
+  @extend .dark-shadow
+  &:hover
+    background: lighten($color, 33%)
+    @extend .shadow
+  &:focus
+    outline: 0
+
+.header-wrapper
+  background: #ffffff
+  @extend .shadow
+
+.clear
+  clear: both
+
+.container
+  .custom-container
+    width: 70%
+    margin: auto
+    margin-top: 70px
+    p
+      line-height: 1.5rem
+      font-size: 1rem
+
+.modals
+  display: none
+
+.heading
+  font-size: 2.2rem
+  text-align: center
+  font-family: $font
+  letter-spacing: 3px
+  // color: #575757
+  color: #e5e5e5
+  // color: black
+
+.sub-heading
+  text-transform: uppercase
+  text-align: center
+  font-size: 1.1rem
+
+.brands
+  text-align: center
+  .brand
+    line-height: 2rem
+    height: 75px
+    margin: 20px
+    // filter: grayscale(100%)
+    transition: 0.2s
+    cursor: pointer
+    // &:hover
+    //   filter: grayscale(0%)
