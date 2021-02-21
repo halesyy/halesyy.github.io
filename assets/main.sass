@@ -134,6 +134,17 @@ body
 @media (max-width: 800px)
   .brands
     .brand
-      width: 300px !important
+      margin: 5px
+      width: calc(100% - 10px) !important
       height: auto !important
+    img[src="brands/aldi.jpg"]
+      width: calc(50% - 10px) !important
     margin-bottom: 70px
+  .header
+    .left, .right
+      float: none
+      text-align: center
+    .right
+      margin-top: 3px
+  .heading
+    font-size: 1.7rem
