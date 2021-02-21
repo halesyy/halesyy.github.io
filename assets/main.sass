@@ -8,6 +8,10 @@ $color: #FF1654
 // 42E2B8
 // E01A4F
 
+// responsive
+@-ms-viewport
+  width: device-width
+
 .shadow
   box-shadow: 0 4px 5px 0 rgb(0 0 0 / 1%), 0 1px 10px 0 rgb(0 0 0 / 1%), 0 2px 4px -1px rgb(0 0 0 / 1%)
 
@@ -124,8 +128,12 @@ body
     line-height: 2rem
     height: 75px
     margin: 20px
-    // filter: grayscale(100%)
     transition: 0.2s
     cursor: pointer !important
-    // &:hover
-    //   filter: grayscale(0%)
+
+@media (max-width: 800px)
+  .brands
+    .brand
+      width: 300px !important
+      height: auto !important
+    margin-bottom: 70px
