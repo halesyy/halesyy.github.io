@@ -53,6 +53,7 @@ body
       width: 250px
       height: 250px
       border: solid $color 3px
+      z-index: 2
       // z-index: -1
       // filter: grayscale(100%)
       @extend .dark-shadow
@@ -110,9 +111,10 @@ body
   background: rgba(0, 0, 0, 0.4)
   display: none
   cursor: pointer
+  z-index: 4
 .mod
   position: relative
-  z-index: 1
+  z-index: 4
   display: none
   max-width: 600px
   padding: 35px
@@ -127,6 +129,7 @@ body
 .mod-wrapper
   position: fixed
   width: 100%
+  z-index: 4
 
 .heading
   font-size: 2.2rem
@@ -176,3 +179,4 @@ body
   .name-text
     width: 100% !important
     text-align: center
+    -webkit-text-stroke: 0 !important
