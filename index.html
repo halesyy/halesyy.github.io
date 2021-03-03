@@ -27,7 +27,7 @@
         <p>
           <strong>
             During hard times, you need equalising analysis. A competitor
-            may have a low quality goodwill yet beet you in the sales - why?
+            may have a low quality goodwill yet beat you in the sales - why?
             My guess: price and reviews.
           </strong>
           <!-- Building brilliant high-level reports to highlight competitor differences. -->
@@ -65,6 +65,13 @@
           quantitative or qualitative backing.
         </p>
       </div>
+      <div class="mod bi-kas" style="display: none;">
+        <h1 class="heading dark">Kempsey Adventist School</h1>
+        <hr />
+        <p>
+          KAS is a school based in Kempsey, of which I attended my High Schooling.
+        </p>
+      </div>
     </div>
     <div class="header-wrapper">
       <div class="container header">
@@ -95,7 +102,8 @@
           <img src="brands/aldi.jpg" alt="aldi logo" class="brand" />
           <img src="brands/myer.png" class="modal-open brand" data-modal="bi-myer" alt="myer logo" />
           <img src="brands/rai.png" alt="regional australian institute logo" class="brand" />
-          <img src="brands/c2u.png" alt="regional australian institute logo" class="brand" />
+          <img src="brands/c2u.png" alt="chemist 2 u" class="brand" />
+          <img src="brands/kas.png" alt="kempsey adventist school" class="brand modal-open" data-modal="bi-kas" />
         </div>
         <!-- <p>ideas below, just ideas</p> -->
         <!-- <h1 class="heading" style="margin-bottom: 45px;">CURRENT PROJECTS</h1> -->
@@ -105,14 +113,27 @@
   </body>
   <script>
     // quick put-together
-    $("button").click(event => {
+    $("button, .brand").click(event => {
       const $target = $(event.target);
       $target.css({"transform": "scale(1.05)"})
       setTimeout(() => { $target.css({"transform": "scale(1)"}) }, 100)
     });
     // mod(al) management
-    const modal = (modal) => $(`.mod`).fadeOut(200, () => { $(`.${modal}, .mod-back`).fadeIn(200) })
-    $(".mod-back").click(() => { $('.mod, .mod-back').fadeOut(100) })
-    $(".modal-open").click(event => { modal($(event.target).attr("data-modal")) })
+    const modal = (modal) => $(`.mod`).hide(100, () => {
+      // alert("fading in model class", modal)
+      setTimeout(() => {
+        $(`.${modal}, .mod-back`).fadeIn(200)
+      }, 100)
+    })
+    $(".mod-back").click(() => {
+      $('.mod-back').fadeOut(100)
+      $('.mod').hide(350)
+    })
+    $(".modal-open").click(event => {
+      // alert("clicked modal open")
+      modal(
+        $(event.target).attr("data-modal")
+      )
+    })
   </script>
 </html>
